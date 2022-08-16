@@ -1,0 +1,21 @@
+# Created by https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,xcode
+# Edit at https://www.toptal.com/developers/gitignore?templates=swift,swiftpackagemanager,xcode
+
+### Swift ###
+# Xcode
+xcuserdata
+*.pbxuser
+!default.pbxuser
+*.xcuserstate
+*.o
+
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+
+# Various
+*.xcconfig
