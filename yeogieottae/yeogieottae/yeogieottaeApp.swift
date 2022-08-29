@@ -15,7 +15,7 @@ struct yeogieottaeApp: App {
 	
 	var body: some Scene {
 		WindowGroup {
-			ContentView()
+			HomeView()
 		}
 	}
 }

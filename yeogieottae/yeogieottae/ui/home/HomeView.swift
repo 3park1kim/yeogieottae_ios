@@ -7,12 +7,19 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct HomeView: View, UIViewRepresentable {
 	@ObservedObject var viewModel = HomeViewModel()
 	
-	var body: some View {
-		Text("Home")
+	func makeUIView(context: Context) -> MTMapView {
+		let view = MTMapView(frame: .zero)
+		view.currentLocationTrackingMode = .onWithoutHeading
+		view.showCurrentLocationMarker = true
+		view.setMapCenter(MTMapPoint(geoCoord: MTMapPointGeo(latitude:  viewModel.location.coordinate.latitude, longitude: viewModel.location.coordinate.longitude)), zoomLevel: 5, animated: true)
+		
+		return view
 	}
+	
+	func updateUIView(_ uiView: MTMapView, context: Context) {}
 }
 
 struct HomeView_Previews: PreviewProvider {

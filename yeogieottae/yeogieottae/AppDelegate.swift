@@ -35,7 +35,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 extension AppDelegate {
 	private func initailize() {
 		containerSetting()
-		let kakaoAppKey = Bundle.main.infoDictionary?["KAKAO_NATIVE_APP_KEY"] ?? ""
+		let kakaoAppKey = Bundle.main.infoDictionary?["KAKAO_APP_KEY"] ?? ""
 		KakaoSDK.initSDK(appKey: kakaoAppKey as! String)
 	}
 }
