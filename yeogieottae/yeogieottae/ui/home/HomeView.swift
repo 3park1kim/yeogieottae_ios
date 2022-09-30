@@ -7,19 +7,27 @@
 
 import SwiftUI
 
-struct HomeView: View, UIViewRepresentable {
+struct HomeView: View {
 	@ObservedObject var viewModel = HomeViewModel()
 	
-	func makeUIView(context: Context) -> MTMapView {
-		let view = MTMapView(frame: .zero)
-		view.currentLocationTrackingMode = .onWithoutHeading
-		view.showCurrentLocationMarker = true
-		view.setMapCenter(MTMapPoint(geoCoord: MTMapPointGeo(latitude:  viewModel.location.coordinate.latitude, longitude: viewModel.location.coordinate.longitude)), zoomLevel: 5, animated: true)
-		
-		return view
+	var body: some View {
+		VStack {
+			HStack(alignment: .center, spacing: 9) {
+				TextField("검색어", text:$viewModel.searchValue)
+					.padding(10)
+					.background(Color(.systemGray6))
+					.cornerRadius(12)
+				Button(action: {}) {
+					Image("ic_notification")
+				}
+				Button(action: {}) {
+					Image("ic_invite")
+				}
+			}
+			.padding(EdgeInsets(top: 10, leading: 19, bottom: 15, trailing: 19))
+			MapView(location: viewModel.location)
+		}
 	}
-	
-	func updateUIView(_ uiView: MTMapView, context: Context) {}
 }
 
 struct HomeView_Previews: PreviewProvider {

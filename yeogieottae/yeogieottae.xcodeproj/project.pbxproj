@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371974D728E4150A00498E46 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371974D628E4150A00498E46 /* ActivityView.swift */; };
+		371974DB28E42B9A00498E46 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371974DA28E42B9A00498E46 /* Color.swift */; };
+		37547A2128E3C9E2003AFFDF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37547A2028E3C9E2003AFFDF /* MapView.swift */; };
 		37686B7228BC74C100429B7B /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37686B4D28BC74C100429B7B /* map_pinup_custom@3x.png */; };
 		37686B7328BC74C100429B7B /* map_pin_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 37686B4E28BC74C100429B7B /* map_pin_custom.png */; };
 		37686B7428BC74C100429B7B /* shadow_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37686B4F28BC74C100429B7B /* shadow_balloon.png */; };
@@ -95,6 +98,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		371974D628E4150A00498E46 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		371974DA28E42B9A00498E46 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		37547A2028E3C9E2003AFFDF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		37686B4D28BC74C100429B7B /* map_pinup_custom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pinup_custom@3x.png"; sourceTree = "<group>"; };
 		37686B4E28BC74C100429B7B /* map_pin_custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_custom.png; sourceTree = "<group>"; };
 		37686B4F28BC74C100429B7B /* shadow_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow_balloon.png; sourceTree = "<group>"; };
@@ -213,6 +219,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371974D828E4170500498E46 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				371974D628E4150A00498E46 /* ActivityView.swift */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		371974D928E42B8E00498E46 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				371974DA28E42B9A00498E46 /* Color.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		37686B4B28BC74C100429B7B /* DaumMap.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +371,7 @@
 		378A52DF28AB1A35006E74FD /* conf */ = {
 			isa = PBXGroup;
 			children = (
+				371974D928E42B8E00498E46 /* utils */,
 				378A52E228AB1A35006E74FD /* Container.swift */,
 				378A52E128AB1A35006E74FD /* KakaoAuthService.swift */,
 				37D5E2E228BC54BC005FFD7D /* LocationService.swift */,
@@ -404,6 +427,7 @@
 		378A52F828AB1A50006E74FD /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				371974D828E4170500498E46 /* widget */,
 				378A530728AB1A50006E74FD /* ContentView.swift */,
 				378A52FF28AB1A50006E74FD /* group */,
 				378A52F928AB1A50006E74FD /* home */,
@@ -418,6 +442,7 @@
 		378A52F928AB1A50006E74FD /* home */ = {
 			isa = PBXGroup;
 			children = (
+				37547A2028E3C9E2003AFFDF /* MapView.swift */,
 				378A52FB28AB1A50006E74FD /* HomeView.swift */,
 				378A52FA28AB1A50006E74FD /* HomeViewModel.swift */,
 			);
@@ -658,14 +683,17 @@
 				378A531628AB1A50006E74FD /* LoginView.swift in Sources */,
 				378A52F528AB1A47006E74FD /* LocalDataSource.swift in Sources */,
 				378A530F28AB1A50006E74FD /* GroupListView.swift in Sources */,
+				371974DB28E42B9A00498E46 /* Color.swift in Sources */,
 				378A530C28AB1A50006E74FD /* HomeView.swift in Sources */,
 				378A52D928AB19FA006E74FD /* AppDelegate.swift in Sources */,
 				378A531028AB1A50006E74FD /* GroupListViewModel.swift in Sources */,
 				378A52E728AB1A35006E74FD /* Logger.swift in Sources */,
 				378A52F728AB1A47006E74FD /* Group.swift in Sources */,
+				371974D728E4150A00498E46 /* ActivityView.swift in Sources */,
 				378A531428AB1A50006E74FD /* ContentView.swift in Sources */,
 				378A52E528AB1A35006E74FD /* KakaoAuthService.swift in Sources */,
 				378A52F228AB1A47006E74FD /* UserRepository.swift in Sources */,
+				37547A2128E3C9E2003AFFDF /* MapView.swift in Sources */,
 				37D5E2E328BC54BC005FFD7D /* LocationService.swift in Sources */,
 				378A52F428AB1A47006E74FD /* RemoteDataSource.swift in Sources */,
 				378A52E628AB1A35006E74FD /* Container.swift in Sources */,
