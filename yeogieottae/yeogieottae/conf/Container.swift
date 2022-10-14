@@ -13,19 +13,26 @@ let appContainer = Container()
 /// 주입 세팅
 func containerSetting() {
 	// MARK: - Data Source
-	appContainer.register(RemoteDataSource.self) { resolver in
-		RemoteDataSource()
+//	appContainer.register(RemoteDataSource.self) { _ in
+//		RemoteDataSourceImpl()
+//	}.inObjectScope(.container)
+	appContainer.register(RemoteDataSource.self) { _ in
+		MockRemoteDataSourceImpl()
 	}.inObjectScope(.container)
 	appContainer.register(LocalDataSource.self) { _ in
-		LocalDataSource()
+		LocalDataSourceImpl()
 	}.inObjectScope(.container)
 	// MARK: - Repository
 	appContainer.register(GroupRepository.self) { resolver in
-		GroupRepository(remoteDataSource: resolver.resolve(RemoteDataSource.self)!,
+		GroupRepositoryImpl(remoteDataSource: resolver.resolve(RemoteDataSource.self)!,
+						localDataSource: resolver.resolve(LocalDataSource.self)!)
+	}.inObjectScope(.container)
+	appContainer.register(PlaceRepository.self) { resolver in
+		PlaceRepositoryImpl(remoteDataSource: resolver.resolve(RemoteDataSource.self)!,
 						localDataSource: resolver.resolve(LocalDataSource.self)!)
 	}.inObjectScope(.container)
 	appContainer.register(UserRepository.self) { resolver in
-		UserRepository(remoteDataSource: resolver.resolve(RemoteDataSource.self)!,
+		UserRepositoryImpl(remoteDataSource: resolver.resolve(RemoteDataSource.self)!,
 						localDataSource: resolver.resolve(LocalDataSource.self)!)
 	}.inObjectScope(.container)
 	// MARK: - Service

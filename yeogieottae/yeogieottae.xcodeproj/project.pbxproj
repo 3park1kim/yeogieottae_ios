@@ -39,6 +39,8 @@
 		37686B8C28BC74C100429B7B /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 37686B7028BC74C100429B7B /* map_pin_shadow.png */; };
 		37686B8D28BC74C100429B7B /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37686B7128BC74C100429B7B /* DaumMap.framework */; };
 		37686B8F28BC74F700429B7B /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37686B8E28BC74F700429B7B /* Metal.framework */; };
+		3775418A28F93FA000648C5E /* groupList.json in Resources */ = {isa = PBXBuildFile; fileRef = 3775418928F93FA000648C5E /* groupList.json */; };
+		3775440E28F950B100648C5E /* PlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3775440D28F950B100648C5E /* PlaceRepository.swift */; };
 		378A52AF28AB1953006E74FD /* yeogieottaeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A52AE28AB1953006E74FD /* yeogieottaeApp.swift */; };
 		378A52B328AB1954006E74FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378A52B228AB1954006E74FD /* Assets.xcassets */; };
 		378A52B628AB1954006E74FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378A52B528AB1954006E74FD /* Preview Assets.xcassets */; };
@@ -71,6 +73,8 @@
 		378A532128AB352F006E74FD /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 378A532028AB352F006E74FD /* KakaoSDKAuth */; };
 		378A532328AB352F006E74FD /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 378A532228AB352F006E74FD /* KakaoSDKUser */; };
 		378A532528AB379A006E74FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A532428AB379A006E74FD /* SceneDelegate.swift */; };
+		37B3021E28F6A7D300AE5E26 /* JSON+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B3021D28F6A7D300AE5E26 /* JSON+Generated.swift */; };
+		37BB7C6928F69CB1001568B4 /* tag.json in Resources */ = {isa = PBXBuildFile; fileRef = 37BB7C6828F69CB1001568B4 /* tag.json */; };
 		37D5E2E328BC54BC005FFD7D /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5E2E228BC54BC005FFD7D /* LocationService.swift */; };
 		37D5E3B128BC5B0B005FFD7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5E3B028BC5B0B005FFD7D /* SystemConfiguration.framework */; };
 		37D5E3B328BC7227005FFD7D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5E3B228BC7227005FFD7D /* CoreLocation.framework */; };
@@ -78,6 +82,7 @@
 		37D5E3B728BC724A005FFD7D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5E3B628BC724A005FFD7D /* libsqlite3.tbd */; };
 		37D5E3B928BC7254005FFD7D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5E3B828BC7254005FFD7D /* libxml2.tbd */; };
 		37D5E3BB28BC725A005FFD7D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5E3BA28BC725A005FFD7D /* libc++.tbd */; };
+		37EC7CE828F55DB100982438 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EC7CE728F55DB100982438 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +144,8 @@
 		37686B7128BC74C100429B7B /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		37686B8E28BC74F700429B7B /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		37686BA228BC763F00429B7B /* KakaoMapHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KakaoMapHeader.h; sourceTree = "<group>"; };
+		3775418928F93FA000648C5E /* groupList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groupList.json; sourceTree = "<group>"; };
+		3775440D28F950B100648C5E /* PlaceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRepository.swift; sourceTree = "<group>"; };
 		378A52AB28AB1953006E74FD /* yeogieottae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yeogieottae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378A52AE28AB1953006E74FD /* yeogieottaeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yeogieottaeApp.swift; sourceTree = "<group>"; };
 		378A52B228AB1954006E74FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +180,8 @@
 		378A531728AB1B30006E74FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		378A531E28AB1D53006E74FD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		378A532428AB379A006E74FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37B3021D28F6A7D300AE5E26 /* JSON+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON+Generated.swift"; sourceTree = "<group>"; };
+		37BB7C6828F69CB1001568B4 /* tag.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tag.json; sourceTree = "<group>"; };
 		37D5E2E228BC54BC005FFD7D /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		37D5E3AE28BC5B01005FFD7D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		37D5E3B028BC5B0B005FFD7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -181,6 +190,7 @@
 		37D5E3B628BC724A005FFD7D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		37D5E3B828BC7254005FFD7D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		37D5E3BA28BC725A005FFD7D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		37EC7CE728F55DB100982438 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +343,7 @@
 				378A52DF28AB1A35006E74FD /* conf */,
 				378A52E828AB1A47006E74FD /* model */,
 				378A52F828AB1A50006E74FD /* ui */,
+				37BB7C6628F69C77001568B4 /* resource */,
 				378A52D828AB19FA006E74FD /* AppDelegate.swift */,
 				378A532428AB379A006E74FD /* SceneDelegate.swift */,
 				378A52AE28AB1953006E74FD /* yeogieottaeApp.swift */,
@@ -401,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				378A52EB28AB1A47006E74FD /* GroupRepository.swift */,
+				3775440D28F950B100648C5E /* PlaceRepository.swift */,
 				378A52EA28AB1A47006E74FD /* UserRepository.swift */,
 			);
 			path = repository;
@@ -420,6 +432,7 @@
 			children = (
 				378A52F128AB1A47006E74FD /* Group.swift */,
 				378A52F028AB1A47006E74FD /* User.swift */,
+				37EC7CE728F55DB100982438 /* Place.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -493,6 +506,32 @@
 			path = login;
 			sourceTree = "<group>";
 		};
+		37BB7C6628F69C77001568B4 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				37BB7C6A28F6A18E001568B4 /* generated */,
+				37BB7C6728F69C89001568B4 /* json */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		37BB7C6728F69C89001568B4 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				37BB7C6828F69CB1001568B4 /* tag.json */,
+				3775418928F93FA000648C5E /* groupList.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		37BB7C6A28F6A18E001568B4 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				37B3021D28F6A7D300AE5E26 /* JSON+Generated.swift */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
 		37D5E3AD28BC5B01005FFD7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +557,7 @@
 				378A52A728AB1953006E74FD /* Sources */,
 				378A52A828AB1953006E74FD /* Frameworks */,
 				378A52A928AB1953006E74FD /* Resources */,
+				37BB7C6528F69BFF001568B4 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -629,6 +669,7 @@
 				37686B8228BC74C100429B7B /* point_sprite.png in Resources */,
 				37686B7E28BC74C100429B7B /* map_pin@3x.png in Resources */,
 				37686B8528BC74C100429B7B /* noimage256.png in Resources */,
+				37BB7C6928F69CB1001568B4 /* tag.json in Resources */,
 				37686B8828BC74C100429B7B /* map_present.png in Resources */,
 				37686B7D28BC74C100429B7B /* daum_copyright.png in Resources */,
 				37686B7A28BC74C100429B7B /* copyright.png in Resources */,
@@ -647,6 +688,7 @@
 				37686B7628BC74C100429B7B /* detail_button.png in Resources */,
 				37686B7C28BC74C100429B7B /* map_pin_red@3x.png in Resources */,
 				37686B8928BC74C100429B7B /* noimage.png in Resources */,
+				3775418A28F93FA000648C5E /* groupList.json in Resources */,
 				37686B8128BC74C100429B7B /* info_box.png in Resources */,
 				37686B7328BC74C100429B7B /* map_pin_custom.png in Resources */,
 				37686B7528BC74C100429B7B /* map_pinup.png in Resources */,
@@ -669,12 +711,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37BB7C6528F69BFF001568B4 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftgen config run\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		378A52A728AB1953006E74FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				378A531528AB1A50006E74FD /* LoginViewModel.swift in Sources */,
+				37EC7CE828F55DB100982438 /* Place.swift in Sources */,
 				378A530D28AB1A50006E74FD /* SplashViewModel.swift in Sources */,
 				378A531328AB1A50006E74FD /* MainView.swift in Sources */,
 				378A531228AB1A50006E74FD /* SettingView.swift in Sources */,
@@ -686,6 +750,7 @@
 				371974DB28E42B9A00498E46 /* Color.swift in Sources */,
 				378A530C28AB1A50006E74FD /* HomeView.swift in Sources */,
 				378A52D928AB19FA006E74FD /* AppDelegate.swift in Sources */,
+				3775440E28F950B100648C5E /* PlaceRepository.swift in Sources */,
 				378A531028AB1A50006E74FD /* GroupListViewModel.swift in Sources */,
 				378A52E728AB1A35006E74FD /* Logger.swift in Sources */,
 				378A52F728AB1A47006E74FD /* Group.swift in Sources */,
@@ -700,6 +765,7 @@
 				378A530B28AB1A50006E74FD /* HomeViewModel.swift in Sources */,
 				378A52F328AB1A47006E74FD /* GroupRepository.swift in Sources */,
 				378A52AF28AB1953006E74FD /* yeogieottaeApp.swift in Sources */,
+				37B3021E28F6A7D300AE5E26 /* JSON+Generated.swift in Sources */,
 				378A52F628AB1A47006E74FD /* User.swift in Sources */,
 				378A532528AB379A006E74FD /* SceneDelegate.swift in Sources */,
 			);

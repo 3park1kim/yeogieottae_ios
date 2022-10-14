@@ -7,7 +7,11 @@
 
 import Foundation
 
-final class GroupRepository {
+protocol GroupRepository {
+	
+}
+
+final class GroupRepositoryImpl: GroupRepository {
 	private let remoteDataSource: RemoteDataSource
 	private let localDataSource: LocalDataSource
 	

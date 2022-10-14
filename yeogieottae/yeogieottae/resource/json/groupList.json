@@ -1,0 +1,84 @@
+{
+	"Positions": [
+		{
+			"positionCode": "aa97c649c1783938955b0805db41ebc3",
+			"positionName": "test",
+			"positionOrder": 1
+		},
+		{
+			"positionCode": "566e5c9f033dfc9b85093874fbf6f942",
+			"positionName": "employee",
+			"positionOrder": 2
+		},
+		{
+			"positionCode": "P001",
+			"positionName": "Employee",
+			"positionOrder": 3
+		},
+		{
+			"positionCode": "b60b7e3e0ea2d3acb288e07c906421a4",
+			"positionName": "12",
+			"positionOrder": 4
+		},
+		{
+			"positionCode": "ef99e7abf91cda48ab5b17f79094270d",
+			"positionName": "ㅁㄴㅇㅎㅇㅁㅇㄴ",
+			"positionOrder": 5
+		},
+		{
+			"positionCode": "4c9241b79b307f51a8653c2e74860c07",
+			"positionName": "ㄴㅇㅁㅎ",
+			"positionOrder": 6
+		},
+		{
+			"positionCode": "26c3bce25435b708a95d85e953eb1607a",
+			"positionName": "ㅌ",
+			"positionOrder": 7
+		},
+		{
+			"positionCode": "01d1f67d8defe4d9981d10f5896b5251",
+			"positionName": "3",
+			"positionOrder": 8
+		},
+		{
+			"positionCode": "d0ca6d3361517158af647a5e9a7b82de",
+			"positionName": "노예",
+			"positionOrder": 9
+		},
+		{
+			"positionCode": "151e1807dc33385b88c4e2a27c49b49b",
+			"positionName": "보컬",
+			"positionOrder": 10
+		},
+		{
+			"positionCode": "f7915c9004a0953e9f298e608e8fc9c5",
+			"positionName": "기타",
+			"positionOrder": 11
+		},
+		{
+			"positionCode": "5819e2f5887b676598a9e387b52e734d",
+			"positionName": "피아노",
+			"positionOrder": 12
+		},
+		{
+			"positionCode": "8582982d54b44829939b4e4d827e7654",
+			"positionName": "본부장",
+			"positionOrder": 13
+		},
+		{
+			"positionCode": "2ef17871e27443e1ab562f3b2ce0bf4f",
+			"positionName": "팀장",
+			"positionOrder": 14
+		},
+		{
+			"positionCode": "40dd1d4d68f3f71a89e97a4f92aeedc0",
+			"positionName": "5",
+			"positionOrder": 15
+		},
+		{
+			"positionCode": "7cbfa9af7a18a1c6bb2a61469030742c",
+			"positionName": "01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567",
+			"positionOrder": 16
+		}
+	]
+}

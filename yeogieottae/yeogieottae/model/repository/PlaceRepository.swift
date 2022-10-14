@@ -1,17 +1,18 @@
 //
-//  UserRepository.swift
+//  PlaceRepository.swift
 //  yeogieottae
 //
-//  Created by 김재경 on 2022/08/10.
+//  Created by 김재경 on 2022/10/14.
 //
 
 import Foundation
 
-protocol UserRepository {
-	
+protocol PlaceRepository {
+	func getTagList() async throws -> [Tag]
 }
 
-final class UserRepositoryImpl: UserRepository {
+
+final class PlaceRepositoryImpl: PlaceRepository {
 	private let remoteDataSource: RemoteDataSource
 	private let localDataSource: LocalDataSource
 	
@@ -19,5 +20,9 @@ final class UserRepositoryImpl: UserRepository {
 		 localDataSource: LocalDataSource) {
 		self.remoteDataSource = remoteDataSource
 		self.localDataSource = localDataSource
+	}
+	
+	func getTagList() async throws -> [Tag] {
+		return try await remoteDataSource.getTagList()
 	}
 }

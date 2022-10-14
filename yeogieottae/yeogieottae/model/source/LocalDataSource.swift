@@ -7,6 +7,10 @@
 
 import Foundation
 
-class LocalDataSource {
+protocol LocalDataSource {
+	
+}
+
+class LocalDataSourceImpl: LocalDataSource {
 	
 }
