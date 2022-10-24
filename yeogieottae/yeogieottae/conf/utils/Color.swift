@@ -25,8 +25,8 @@ extension Color {
 
 //원하는 컬러 생성
 extension Color {
-	static let light = Color(hex: "#F7FBFC")
-	static let base = Color(hex: "#D6E6F2")
-	static let normal = Color(hex: "#B9D7EA")
-	static let accent = Color(hex: "#769FCD")
+	static let light = Color(hex: "#FFF7FBFC")
+	static let base = Color(hex: "#FFD6E6F2")
+	static let normal = Color(hex: "#FFB9D7EA")
+	static let accent = Color(hex: "#FF769FCD")
 }

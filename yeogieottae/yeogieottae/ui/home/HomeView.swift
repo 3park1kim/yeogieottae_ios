@@ -11,38 +11,37 @@ struct HomeView: View {
 	@ObservedObject var viewModel = HomeViewModel()
 	
 	var body: some View {
-		VStack {
-			HStack(alignment: .center, spacing: 9) {
-				TextField("검색어", text:$viewModel.searchValue)
-					.disabled(true)
-					.padding(10)
-					.background(Color(.systemGray6))
-					.cornerRadius(12)
-					.onTapGesture {
-						// open Search Page
+		NavigationView {
+			VStack {
+				HStack(alignment: .center, spacing: 9) {
+					NavigationLink(destination: SearchView()) {
+						TextField("검색어", text:$viewModel.searchValue)
+							.disabled(true)
+							.padding(15)
+							.background(Color(.systemGray6))
+							.cornerRadius(12)
 					}
-				Button(action: {}) {
-					Image("ic_notification")
+					.buttonStyle(PlainButtonStyle())
+					Button(action: {}) {
+						Image("ic_notification")
+					}
+					Button(action: {}) {
+						Image("ic_invite")
+					}
 				}
-				Button(action: {}) {
-					Image("ic_invite")
-				}
+				.padding(EdgeInsets(top: 10, leading: 19, bottom: 10, trailing: 19))
+				TagView(tags: $viewModel.tagList)
+				MapView(location: viewModel.location)
 			}
-			.padding(EdgeInsets(top: 10, leading: 19, bottom: 15, trailing: 19))
-			TagView(tags: $viewModel.tagList)
-			MapView(location: viewModel.location)
+			.navigationBarTitle("")
+			.navigationBarHidden(true)
 		}
-	}
-}
-
-struct HomeView_Previews: PreviewProvider {
-	static var previews: some View {
-		HomeView()
+		.accentColor(.black)
 	}
 }
 
 
-
+// MARK: - 장소 태그 목록
 struct TagView: View {
 	@Binding var tags : [Tag]
 	
@@ -54,9 +53,10 @@ struct TagView: View {
 						.padding([.horizontal, .vertical], 4)
 				}
 			}
+			.padding(EdgeInsets(top: 0, leading: 19, bottom: 0, trailing: 19))
 		}
 	}
-
+	
 	private func item(for text: String, isSelected: Bool) -> some View {
 		Text(text)
 			.foregroundColor(Color(.systemCyan))
@@ -83,3 +83,9 @@ struct TagView: View {
 //		hasher.combine(isSelected)
 //	}
 //}
+
+struct HomeView_Previews: PreviewProvider {
+	static var previews: some View {
+		HomeView()
+	}
+}

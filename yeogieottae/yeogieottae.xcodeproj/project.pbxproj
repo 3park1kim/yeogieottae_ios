@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		371974D728E4150A00498E46 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371974D628E4150A00498E46 /* ActivityView.swift */; };
 		371974DB28E42B9A00498E46 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371974DA28E42B9A00498E46 /* Color.swift */; };
 		37547A2128E3C9E2003AFFDF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37547A2028E3C9E2003AFFDF /* MapView.swift */; };
 		37686B7228BC74C100429B7B /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37686B4D28BC74C100429B7B /* map_pinup_custom@3x.png */; };
@@ -75,6 +74,8 @@
 		378A532528AB379A006E74FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A532428AB379A006E74FD /* SceneDelegate.swift */; };
 		37B3021E28F6A7D300AE5E26 /* JSON+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B3021D28F6A7D300AE5E26 /* JSON+Generated.swift */; };
 		37BB7C6928F69CB1001568B4 /* tag.json in Resources */ = {isa = PBXBuildFile; fileRef = 37BB7C6828F69CB1001568B4 /* tag.json */; };
+		37BD022828FE3DA0003C9BB7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD022728FE3DA0003C9BB7 /* SearchViewModel.swift */; };
+		37BD022A28FE3DAB003C9BB7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD022928FE3DAB003C9BB7 /* SearchView.swift */; };
 		37D5E2E328BC54BC005FFD7D /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5E2E228BC54BC005FFD7D /* LocationService.swift */; };
 		37D5E3B128BC5B0B005FFD7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5E3B028BC5B0B005FFD7D /* SystemConfiguration.framework */; };
 		37D5E3B328BC7227005FFD7D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5E3B228BC7227005FFD7D /* CoreLocation.framework */; };
@@ -103,7 +104,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		371974D628E4150A00498E46 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		371974DA28E42B9A00498E46 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		37547A2028E3C9E2003AFFDF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		37686B4D28BC74C100429B7B /* map_pinup_custom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pinup_custom@3x.png"; sourceTree = "<group>"; };
@@ -182,6 +182,8 @@
 		378A532428AB379A006E74FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		37B3021D28F6A7D300AE5E26 /* JSON+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON+Generated.swift"; sourceTree = "<group>"; };
 		37BB7C6828F69CB1001568B4 /* tag.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tag.json; sourceTree = "<group>"; };
+		37BD022728FE3DA0003C9BB7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		37BD022928FE3DAB003C9BB7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		37D5E2E228BC54BC005FFD7D /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		37D5E3AE28BC5B01005FFD7D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		37D5E3B028BC5B0B005FFD7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -229,14 +231,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		371974D828E4170500498E46 /* widget */ = {
-			isa = PBXGroup;
-			children = (
-				371974D628E4150A00498E46 /* ActivityView.swift */,
-			);
-			path = widget;
-			sourceTree = "<group>";
-		};
 		371974D928E42B8E00498E46 /* utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,7 +434,6 @@
 		378A52F828AB1A50006E74FD /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				371974D828E4170500498E46 /* widget */,
 				378A530728AB1A50006E74FD /* ContentView.swift */,
 				378A52FF28AB1A50006E74FD /* group */,
 				378A52F928AB1A50006E74FD /* home */,
@@ -458,6 +451,8 @@
 				37547A2028E3C9E2003AFFDF /* MapView.swift */,
 				378A52FB28AB1A50006E74FD /* HomeView.swift */,
 				378A52FA28AB1A50006E74FD /* HomeViewModel.swift */,
+				37BD022928FE3DAB003C9BB7 /* SearchView.swift */,
+				37BD022728FE3DA0003C9BB7 /* SearchViewModel.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -754,7 +749,6 @@
 				378A531028AB1A50006E74FD /* GroupListViewModel.swift in Sources */,
 				378A52E728AB1A35006E74FD /* Logger.swift in Sources */,
 				378A52F728AB1A47006E74FD /* Group.swift in Sources */,
-				371974D728E4150A00498E46 /* ActivityView.swift in Sources */,
 				378A531428AB1A50006E74FD /* ContentView.swift in Sources */,
 				378A52E528AB1A35006E74FD /* KakaoAuthService.swift in Sources */,
 				378A52F228AB1A47006E74FD /* UserRepository.swift in Sources */,
@@ -762,9 +756,11 @@
 				37D5E2E328BC54BC005FFD7D /* LocationService.swift in Sources */,
 				378A52F428AB1A47006E74FD /* RemoteDataSource.swift in Sources */,
 				378A52E628AB1A35006E74FD /* Container.swift in Sources */,
+				37BD022828FE3DA0003C9BB7 /* SearchViewModel.swift in Sources */,
 				378A530B28AB1A50006E74FD /* HomeViewModel.swift in Sources */,
 				378A52F328AB1A47006E74FD /* GroupRepository.swift in Sources */,
 				378A52AF28AB1953006E74FD /* yeogieottaeApp.swift in Sources */,
+				37BD022A28FE3DAB003C9BB7 /* SearchView.swift in Sources */,
 				37B3021E28F6A7D300AE5E26 /* JSON+Generated.swift in Sources */,
 				378A52F628AB1A47006E74FD /* User.swift in Sources */,
 				378A532528AB379A006E74FD /* SceneDelegate.swift in Sources */,

@@ -28,6 +28,7 @@ struct MainView: View {
 		.accentColor(.accent)
 		.onAppear() {
 			UITabBar.appearance().backgroundColor = UIColor(Color.base)
+			UITabBar.appearance().barTintColor = UIColor(Color.base)
 		}
 	}
 	

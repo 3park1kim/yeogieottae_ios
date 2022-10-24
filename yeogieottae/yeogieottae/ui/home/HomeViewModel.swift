@@ -29,7 +29,10 @@ final class HomeViewModel: ObservableObject {
 	
 	private func loadData() {
 		Task.detached(priority: .background) {
-			self.tagList = await self.getTagList()
+			let tagList = await self.getTagList()
+			DispatchQueue.main.async {
+				self.tagList = tagList
+			}
 		}
 	}
 	
